@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 Route::get('/pdf/view', [PdfController::class, 'view']);
 Route::get('/pdf/download', [PdfController::class, 'download']);
+
+Route::get('generateFL309', [PdfController::class, 'generateFL309']);
