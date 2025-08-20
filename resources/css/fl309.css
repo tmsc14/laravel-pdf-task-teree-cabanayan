@@ -1,0 +1,455 @@
+@page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+    margin-top: 31pt;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.form-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1.2px solid black;
+    margin-top: 14pt;
+}
+
+.main-table td {
+    border: 1px solid black;
+    padding: 2pt;
+    vertical-align: top;
+    font-size: 6pt;
+    line-height: 1.2;
+}
+
+.attorney-section {
+    width: 50%;
+}
+
+.court-section {
+    width: 50%;
+}
+
+.field-line {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    min-width: 120pt;
+    height: 11pt;
+    margin-left: 2pt;
+}
+
+.field-line-short {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    min-width: 40pt;
+    height: 11pt;
+    margin-left: 2pt;
+}
+
+.field-line-medium {
+    border-bottom: 1px solid black;
+    display: inline-block;
+    min-width: 80pt;
+    height: 11pt;
+    margin-left: 2pt;
+}
+
+.label {
+    font-weight: normal;
+}
+
+.for-court-use {
+    text-align: center;
+    margin-right: 13pt;
+    font-weight: bold;
+    font-size: 6pt;
+}
+
+.superior-court-cell {
+    padding-top: 1pt;
+}
+
+.superior-court-header {
+    font-weight: bold;
+    font-size: 8pt;
+    margin-bottom: 2pt;
+    margin-top: 0;
+}
+
+.superior-court-info {
+    text-align: right;
+    margin-right: 293pt;
+    margin-bottom: 4pt;
+}
+
+.superior-court-info:last-child {
+    margin-bottom: 1pt;
+}
+
+.case-parties {
+    padding: 1pt;
+}
+
+.party-line {
+    margin-bottom: 4pt;
+    font-size: 8pt;
+    text-align: right;
+    margin-right: 230pt;
+
+}
+
+.field-spacing {
+    margin-left: 75pt;
+}
+
+.field-spacing-small {
+    margin-left: 4pt;
+}
+
+.field-spacing-fax {
+    margin-left: 150pt;
+}
+
+.field-spacing-state {
+    margin-left: 189pt;
+    margin-right: 30pt;
+}
+
+.resched-hearing {
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 5pt;
+    margin-left: 57pt;
+}
+
+.case-number-label {
+    font-size: 6pt;
+    margin-bottom: 4pt;
+}
+
+.party-complete-section {
+    font-size: 8pt;
+    margin-top: -5pt;
+}
+
+.party-section-label {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 9pt;
+}
+
+.party-section-label-2 {
+    font-size: 9pt;
+}
+
+.party-numbered-list {
+    margin-left: 11.5pt;
+    padding: 0;
+    margin-top: -5pt;
+}
+
+.party-numbered-list li {
+    font-size: 9pt;
+    line-height: 1.5;
+    text-indent: -15pt;
+    padding-left: 19pt;
+    margin-right: -50pt;
+}
+
+.party-checkbox-container {
+    display: inline-block;
+    margin-left: 32pt;
+}
+
+.party-checkbox-container-2 {
+    display: inline-block;
+    margin-left: -6pt;
+    margin-right: -13pt;
+}
+
+.party-checkbox-label {
+    margin-left: 19pt;
+    margin-top: 2pt;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.party-checkbox-label-2 {
+    margin-left: 18pt;
+    margin-top: 2pt;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.party-checkbox {
+    border: 1px solid black;
+    width: 17pt;
+    height: 8pt;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: -10pt;
+}
+
+.court-section-label {
+    font-weight: bold;
+    font-size: 9pt;
+    margin-top: -7pt;
+    margin-bottom: 0pt; 
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+.court-section-divider {
+    border-top: 1px solid black;
+    margin-top: 2pt;
+}
+
+.order-deny-section {
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+}
+
+.order-deny-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 9pt;
+    margin-bottom: -2pt;
+    
+}
+
+.order-deny-number {
+    margin-right: 6pt;
+}
+
+.order-deny-checkbox {
+    border: 1px solid black;
+    width: 17pt;
+    height: 8pt;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6pt;
+    margin-top: 4pt;
+}
+
+.order-deny-label {
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.order-deny-details {
+    font-size: 9pt;
+    margin-left: 18pt;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 6pt;
+    margin-bottom: 42pt;
+}
+
+.order-deny-details .order-deny-checkbox {
+    margin-left: 6pt;
+    margin-right: 2pt;
+}
+
+.order-deny-details a {
+    color: #333333ff;
+    text-decoration: underline;
+    margin-left: 2pt;
+}
+
+.order-grant-section {
+    margin-top: 8pt;
+    margin-bottom: 0pt;
+}
+
+.order-grant-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 9pt;     
+    margin-bottom: -2pt;
+}
+
+.order-grant-number {
+    margin-right: 6pt;
+}
+
+.order-grant-checkbox {
+    border: 1px solid black;
+    width: 17pt;
+    height: 8pt;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 4pt;
+    margin-right: 6pt;
+}
+
+.order-grant-label {
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.order-grant-details {
+    font-size: 9pt;
+    margin-left: 18pt;
+    margin-top: 2pt;
+    margin-bottom: -2pt;
+    display: flex;
+    align-items: center;
+    gap: 6pt;
+}
+
+.order-grant-subletter {
+    margin-right: 4pt;
+}
+
+.order-grant-box {
+    border: 1.1px solid black;
+    padding-left: 7pt;
+    padding-top: 2pt;
+    margin: 4pt 0 6pt 29pt;
+    font-size: 8pt;
+}
+
+.order-grant-row {
+    margin-bottom: 4pt;
+    font-size: 9pt;
+}
+
+.reason-reschedule-section {
+    margin-top: 8pt;
+    margin-bottom: 0pt;
+}
+
+.reason-reschedule-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 9pt;
+    margin-bottom: 2pt;
+}
+
+.reason-reschedule-number {
+    margin-right: 6pt;
+}
+
+.reason-reschedule-label {
+    font-weight: bold;
+    font-size: 10pt;
+    margin-left: 0pt;
+}
+
+.reason-reschedule-details {
+    font-size: 9pt;
+    margin-left: 18pt;
+    margin-top: 0pt;
+    margin-bottom: 2pt;
+    display: flex;
+    align-items: center;
+    gap: 6pt;
+}
+
+.reason-reschedule-details-2 {
+    font-size: 9pt;
+    margin-left: 18pt;
+    margin-top: 22pt;
+    margin-bottom: 2pt;
+    display: flex;
+    align-items: center;
+    gap: 6pt;
+}
+
+.reason-reschedule-subletter {
+    margin-right: 4pt;
+    font-size: 9pt;
+    margin-left: 0pt;
+}
+
+.reason-reschedule-list {
+    margin-left: 36pt;
+    font-size: 8pt;
+    margin-bottom: 0;
+}
+
+.reason-reschedule-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0pt;
+    gap: 6pt;
+    font-size: 9pt;
+}
+
+.reason-reschedule-item-number {
+    margin-right: 4pt;
+}
+
+.reason-reschedule-checkbox {
+    border: 1px solid black;
+    width: 17pt;
+    height: 8pt;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4pt;
+    position: relative;
+    top: 2pt;
+}
+
+.reason-reschedule-link {
+    color: #333333ff;
+    text-decoration: underline;
+    margin-left: 2pt;
+}
+
+.footer-table{
+    width:100%;
+    border-collapse:collapse;
+    border-top:1px solid black;
+    margin-top:6pt;        
+    page-break-inside: avoid; 
+}
+.footer-table td{
+    padding-top:3pt;
+    vertical-align:top;
+    font-size:7pt;
+    line-height:1.2;
+}
+.footer-table .footer-left{
+    width:15%;
+    text-align:left;
+    font-size:6pt;
+}
+.footer-table .footer-center{
+    width:57%;
+    text-align:center;
+    font-weight:bold;
+}
+.footer-table .footer-right{
+    width:15%;
+    text-align:right;
+    white-space:nowrap;
+    font-size:6pt;
+}
+.footer-title{ font-size:10pt; font-weight:bold; }
+.footer-subtitle{ font-size:10pt; font-weight:bold; }
+.footer-link{ color:#333; text-decoration:underline; }
+
+.footer-page-info{
+    font-size: 6pt;
+    line-height: 9pt;
+    margin-left: 508pt;
+    top: 678;
+    position: absolute;
+}
