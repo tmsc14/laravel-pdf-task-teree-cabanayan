@@ -5,6 +5,156 @@
     <title>FL-309</title>
     <style>
         {!! file_get_contents(resource_path('css/fl309.css')) !!}
+
+        .form-box-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1.2px solid black;
+            margin-top: 30pt;
+        }
+
+        .form-box-table td {
+            border: 1px solid black;
+            vertical-align: top;
+            font-size: 6pt;
+            line-height: 1.2;
+        }
+
+        .checkbox {
+            border: 1px solid black;
+            width: 17pt;
+            height: 8pt;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 5pt;
+            margin-right: 4pt;
+            margin-left: 4pt;
+        }
+
+        .section-eight{
+            font-size: 9pt;
+        }
+
+        .section-nine-content{
+            margin-left: 12pt;
+            font-size: 9pt;
+        }
+
+        .section-nine-list{
+            margin-left: 15pt;
+        }
+
+        .section-ten-content {
+            margin-left: 15pt;
+            font-size: 9pt;
+            line-height: 1.5 !important;
+        }
+
+        .p2-signature-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+            margin-top: 50px;
+            table-layout: fixed;
+        }
+
+        .p2-signature-date {
+            width: 55%;
+            vertical-align: bottom;
+            position: relative;
+            top: -70px; 
+        }
+
+        .p2-signature-line {
+            display: inline-block;
+            width: 150px;
+            border-bottom: 1px solid black;
+            margin-left: 4px;
+        }
+
+        .p2-signature-officer-cell {
+        width: 45%;
+        vertical-align: bottom;
+        }
+
+        .p2-signature-officer-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        }
+
+        .p2-signature-officer-row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        }
+
+        /* Triangle */
+        .p2-signature-officer-triangle {
+        width: 0;
+        height: 0;
+        border-left: 10px solid black;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        margin-right: 7px;
+        }
+
+        /* Line */
+        .p2-signature-officer-line {
+        flex: 1;
+        border-bottom: 2px solid black;
+        }
+
+        /* Label */
+        .p2-signature-officer-label {
+        font-size: 6pt;
+        text-align: center;
+        }
+
+        .p2-footer-table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            margin-top:-9pt;
+            
+        }
+
+        .p2-footer-table {
+            margin-top: -5pt;
+        }
+
+        .p2-footer-left {
+            text-align: left;
+            white-space: nowrap;
+            width: 33%;
+            font-size: 6pt;
+        }
+
+        .p2-footer-center {
+            text-align: center;
+            white-space: nowrap;
+            width: 34%;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .p2-footer-right {
+            text-align: right;
+            white-space: nowrap;
+            width: 33%;
+            font-size: 6pt;
+            font-weight:bold;
+        }
+
+        .p2-footer-subtitle {
+            text-align: center;
+            white-space: nowrap;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+
     </style>
 </head>
 <body>
@@ -135,7 +285,6 @@
                 <span style="margin-left: 2pt;">Same as noted above</span>
                 <span class="order-grant-checkbox" style="margin-left: 12pt;"></span>
                 <span style="margin-left: 2pt;">Other (specify):</span>
-                <span class="field-line-medium"></span>
             </div>
             <div class="order-grant-row">
                 <span class="order-grant-checkbox"></span>
@@ -219,6 +368,244 @@
         <span class="footer-link">www.courts.ca.gov</span>
         </td>
     </tr>
+    </table>
+
+    <!-- PAGE BREAK -->
+    <div style="page-break-before: always;"></div>
+
+    <!-- Page 2 Header -->
+    <table class="form-box-table">
+        <tr>
+            <td style="width: 60%;">
+                <div class="form-box" style="text-align: right; font-size: 8pt; margin-right: 230pt; line-height: 1.5;">
+                    <div>PETITIONER/PLAINTIFF:</div>
+                    <div>RESPONDENT/DEFENDANT:</div>
+                    <div>OTHER PARENT/PARTY:</div>
+                </div>
+            </td>
+            <td style="width: 30%; text-align: left; vertical-align: top;">
+                <div style="top: 18pt;" class="form-header">FL-309</div>
+                <div style="margin-top: 3pt; margin-left: 2pt;">CASE NUMBER:</div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Section 8 -->
+    <div class="section-eight">
+        <div style="margin-top: 4pt; font-size: 10pt;">8.&nbsp;&nbsp;<b>Temporary emergency (ex parte) orders</b></div>
+        <div style="margin-left: 15pt;">
+            <div>
+                <span>a.</span>
+                <span class="checkbox"></span>
+                <span>The temporary emergency (ex parte) orders are MODIFIED as of this date. The new orders are stated in the attached</span>
+            </div>
+            <div style="margin-left: 15pt; line-height: 0.2 !important;" >
+                <div class>
+                    <span>(1)</span>
+                    <span class="checkbox"></span>
+                    <span style="font-style: italic;">Request for Order</span> (form FL-300).
+                </div>
+                <div>
+                    <span>(2)</span>
+                    <span class="checkbox"></span>
+                    <span style="font-style: italic;">Temporary Emergency (Ex Parte) Orders</span> (form FL-305)
+                </div>
+                <div>
+                    <span>(3)</span>
+                    <span class="checkbox"></span>
+                    <span style="font-style: italic;">Order to Show Cause for</span>
+                    <span class="checkbox"></span> contempt.
+                    <span class="checkbox"></span> seek work.
+                    <span class="checkbox"></span> other <span style="font-style: italic;">(specify):</span>
+                </div>
+                <div>
+                    <span>(4)</span>
+                    <span class="checkbox"></span>
+                    other <span style="font-style: italic;">(specify):</span>
+                </div>
+            </div>
+            <div>
+                <span>b.</span>
+                <span class="checkbox"></span>
+                The temporary emergency (ex parte) orders are TERMINATED for the reasons stated
+                <span class="checkbox"></span>
+                <a href="#" style="text-decoration: underline; color: #333333ff;">on Attachment 8b. </br></a>
+                <span style="margin-left: 32pt; margin-top: -1pt;" class="checkbox"></span>
+                <span>in this section: </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="section-nine" style="margin-top: 12pt;">
+        <div>9. &nbsp;&nbsp;<b>Service of order</b></div>
+        <div class="section-nine-content">
+            <div>
+                <span>a.</span>
+                <span class="checkbox"></span>
+                No further service is required. Both parties were present at the hearing when the court made this order.
+            </div>
+            <div>
+                <span>b.</span>
+                <span class="checkbox"></span>
+                The documents listed in item 10 must be served
+            </div>
+            <div class="section-nine-list">
+                <div>
+                    <span>(1)</span>
+                    <span class="checkbox"></span>
+                    as required by rule 5.92
+                </div>
+                <div style="margin-bottom: 4pt;">
+                    <span>(2)</span>
+                    <span class="checkbox"></span>
+                    by <span style="font-style: italic;">(date):</span>
+                </div>
+                <div>
+                    on <span style="font-style: italic;">(select all that apply)</span>
+                    <div style="margin-top: 4pt;">
+                        <span>(1)</span>
+                        <span class="checkbox"></span>
+                        petitioner/plaintiff.
+                    </div>
+                    <div>
+                        <span>(2)</span>
+                        <span class="checkbox"></span>
+                        respondent/defendant.
+                    </div>
+                    <div>
+                        <span>(3)</span>
+                        <span class="checkbox"></span>
+                        other parent/party.
+                    </div>
+                    <div>
+                        <span>(4)</span>
+                        <span class="checkbox"></span>
+                        other <span style="font-style: italic;">(specify):</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span>c.</span>
+                <span class="checkbox"></span>
+                All documents must be served as follows:
+            </div>
+            <div style="margin-left: 16pt;">
+                <div>
+                    <span>(1)</span>
+                    <span class="checkbox"></span>
+                    Personally served
+                </div>
+                <div>
+                    <span>(2)</span>
+                    <span class="checkbox"></span>
+                    Served by mail
+                </div>
+                <div>
+                    <span>(3)</span>
+                    <span class="checkbox"></span>
+                    Other <span style="font-style: italic;">(specify):</span>
+                </div>
+            </div>
+            <div>
+                <span>d.</span>
+                <span class="checkbox"></span>
+                Other orders regarding service <span style="font-style: italic;">(specify):</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 10 -->
+    <div class="section-ten" style="margin-top: 20pt;">
+        <div>10.&nbsp;<b>Documents for service</b></div>
+        <div class="section-ten-content">
+            <div>
+                A filed copy of this order (form FL-309) must be served along with the following papers:
+            </div>
+            <div>
+                <span>a.</span>
+                <span style="margin-left: 5pt;" class="checkbox"></span>
+                A copy of the previously filed <span style="font-style: italic;">Request for Order</span> (form FL-300), order to show cause, or other moving paper.
+            </div>
+            <div>
+                <span>b.</span>
+                <span style="margin-left: 5pt;" class="checkbox"></span>
+                A copy of the extended or modified <span style="font-style: italic;">Temporary Emergency (Ex Parte) Orders</span> (form FL-305).
+            </div>
+            <div style="margin-bottom: 20pt;">
+                <span>c.</span>
+                <span style="margin-left: 6pt;" class="checkbox"></span>
+                Other <span style="font-style: italic;">(specify):</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 11 -->
+    <div class="section-eleven" style="margin-top: 12pt; font-size: 9pt;">
+        <div>
+            <span style="margin-right: -5pt;">11.</span>
+            <span class="checkbox"></span>
+            <span>A <i>Responsive Declaration to Request for Order</i></span> (form FL-320) may be filed and served
+        </div>
+        <div style="margin-left: 15pt;">
+            <div>
+                <span>a.</span>
+                <span class="checkbox"></span>
+                as required by rule 5.92
+            </div>
+            <div>
+                <span>b.</span>
+                <span class="checkbox"></span>
+                by <span style="font-style: italic;">(date):</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 12 -->
+    <div class="section-twelve" style="margin-top: 5pt; font-size: 9pt;">
+        <div>
+            <span>12.</span>
+            <span style="margin-left: -1pt;" class="checkbox"></span>
+            Other orders:
+        </div>
+    </div>
+
+    <!-- Page 2: Date and Judicial Officer -->
+    <table class="p2-signature-table">
+        <tr>
+            <!-- Date -->
+            <td class="p2-signature-date">
+                Date: <span class="p2-signature-line"></span>
+            </td>
+
+            <!-- Judicial Officer -->
+            <td class="p2-signature-officer-cell">
+            <div class="p2-signature-officer-block">
+                <div class="p2-signature-officer-row">
+                <div class="p2-signature-officer-triangle"></div>
+                <div class="p2-signature-officer-line"></div>
+                </div>
+                <div class="p2-signature-officer-label">JUDICIAL OFFICER</div>
+            </div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Section Divider -->
+    <hr class="p2-section-divider">
+
+    <!-- Page 2 Footer -->
+    <table class="p2-footer-table">
+        <tr>
+            <td class="p2-footer-left">FL-309 [New July 1, 2020]</td>
+            <td class="p2-footer-center">ORDER ON REQUEST TO RESCHEDULE HEARING</td>
+            <td class="p2-footer-right">Page 2 of 2</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="p2-footer-subtitle">
+                (Family Law—Governmental—Uniform Parentage—Custody and Support)
+            </td>
+        </tr>
     </table>
 </body>
 </html>
